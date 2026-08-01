@@ -1,4 +1,4 @@
-# Agentic Customer Support System
+# StarAI - Agentic Customer Support System
 
 An AI-powered customer support system developed for the PointStar Developer Intern Assessment.
 
