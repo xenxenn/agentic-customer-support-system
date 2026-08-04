@@ -72,6 +72,21 @@ Create a `.env` file based on `.env.example`and add your own API key:
 GEMINI_API_KEY=your_own_api_key_here
 ```
 
+## Gemini Model Notes
+
+This project uses the Google Gemini API. If you encounter errors such as:
+
+- `404 NOT_FOUND` (model no longer available)
+- `429 RESOURCE_EXHAUSTED` (quota exceeded)
+- `503 UNAVAILABLE` (temporary high server demand)
+
+update the model name in `src/model.py` to one that is currently available for your Google AI account.
+For example:
+```python
+model="gemini-3.5-flash"
+```
+Google may deprecate older models or introduce newer ones over time. Please refer to the official Google AI documentation for the latest supported Gemini models.
+
 ## Repository Structure
 
 ```
